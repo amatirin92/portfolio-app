@@ -1,0 +1,34 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened role="navigation">
+    <mat-nav-list>
+      <a mat-list-item routerLink='/home'>Home</a>
+      <!-- <a mat-list-item routerLink='/about-me'>About Me</a> -->
+
+      <!-- <mat-list-item aria-label="toggle projects" (click)="drawer.toggle()" color="primary">
+        </mat-list-item> -->
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Projects</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <a mat-list-item href="https://the-email-subscription-app.herokuapp.com/"> Email Subscription </a>
+          <a mat-list-item href="https://girls-who-go-9dbb4.firebaseapp.com"> Girls Who Go </a>
+          <a mat-list-item href="https://rock-the-angular-vote.herokuapp.com/"> Rock The Vote </a>
+        </mat-list>
+
+      </mat-expansion-panel>
+
+        <!-- End of inner list -->
+      <!-- </mat-list-item> -->
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content fxLayout="row no-wrap" fxLayout.xs="row" fxLayoutAlign="center center">
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
